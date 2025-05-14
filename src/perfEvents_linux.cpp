@@ -573,7 +573,7 @@ int PerfEvents::createForThread(int tid) {
     }
 
     if (!_kernel_stack) {
-        attr.exclude_callchain_kernel = 1;
+        attr.exclude_kernel = 1;
     }
 
     if (_cstack >= CSTACK_FP) {
